@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge1</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <img src="photo1.jpg" alt="photo1" width="400" height="400">
+            <h2>Top Winter Location</h2>
+            <p class="opacity">More than 200 locations</p>
+            <div class="desc" id="desc">    
+                <p>Card provide context and an entry point to more robust
+                information and views, and their context and quantity 
+                can vary greatly
+                </p>
+            </div>  
+            <button type="button" onclick="showFunction()">Show</button>
+            <button type="button" onclick="hideFunction()">Hide</button>
+            <a href="" onclick="alert('FULL INFORMATION')">Export</a>          
+        </div >
+        <div class="card">
+            <img src="photo1.jpg" alt="photo1" width="400" height="400">
+            <h2>Top Winter Location</h2>
+            <p class="opacity">More than 200 locations</p>
+            <div class="desc" id="desc2">    
+                <p>Card provide context and an entry point to more robust
+                information and views, and their context and quantity 
+                can vary greatly
+                </p>
+            </div>  
+            <button type="button" onclick="showFunction2()">Show</button>
+            <button type="button" onclick="hideFunction2()">Hide</button>
+            <a href="" onclick="alert('FULL INFORMATION')">Export</a>
+        </div>
+        <div class="card">
+            <div class="profile">
+                <div class="float">
+                    <img src="photo1.jpg" alt="profilePhoto">
+                </div>
+                <div class="float">
+                    <p>Christy <br><span class="opacity">20 min.ago</span></p>
+                </div>
+            </div>
+            <img src="photo1.jpg" alt="photo1" width="400" height="400">
+            <h2>Top Winter Location</h2>
+            <p class="opacity">More than 200 locations</p>
+            <div class="desc">    
+                <p>Card provide context and an entry point to more robust
+                information and views, and their context and quantity 
+                can vary greatly
+                </p>
+            </div>  
+        </div>
+        <div class="card">
+            <img src="photo1.jpg" alt="photo1" width="400" height="400">  
+        </div>  
+      </div>
+    <script>
+        function hideFunction() {
+          document.getElementById("desc").style.display = "none";
+        }
+        function showFunction() {
+          document.getElementById("desc").style.display = "block";
+        }
+        function hideFunction2() {
+          document.getElementById("desc2").style.display = "none";
+        }
+        function showFunction2() {
+          document.getElementById("desc2").style.display = "block";
+        }
+    </script>
+</body>
+</html>
